@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <meta name="keywords" content="">
+    <script type="text/javascript" src="swfobject.js"></script>
+
+    <body style='height: 97%;'>
+		<div id="control"></div>
+		<script type="text/javascript">
+			var flashvars = {         
+				streamer:"rtmp://4.30.20.151/cultocvlr2",
+				file: "cultocvlr22",				
+				autostart: "true",
+				//skin: "SWF_URL/modieus.swf",
+				displayclick: "fullscreen",
+				type: "video",
+				controlbar: "over"
+			};
+			var params = {
+				menu: "false",
+				wmode: "transparent",
+				allowfullscreen: "true",
+				allowscriptaccess:"always"
+			};
+			var attributes = {
+				id: "control",
+				name: "control"
+			};
+			swfobject.embedSWF("./player.swf","control", "96%", "96%", "9.0.0", "./swf/expressInstall.swf", flashvars, params);	
+		</script>           
+	</body>
+</html>
