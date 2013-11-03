@@ -7,10 +7,20 @@
     </head>
 
     <body style='height: 97%;'>
-		<div class="flowplayer">
-   <video>
-      <source type="application/x-mpegurl" src="http://hd2.worldkast.com:1935/8020/80201/playlist.m3u8">
+		<div class="player" data-engine="flash">
+   <video preload="none">
+      <source type="application/x-mpegurl" src="http://hd2.worldkast.com:1935/8020/80201/playlist.m3u8" sutoplay>
    </video>
+   
+   <script>
+// run script after document is ready
+$(function () {
+ 
+   // install flowplayer to an element with CSS class "player"
+   $(".player").flowplayer({ swf: "//releases.flowplayer.org/5.4.3/flowplayer.swf" });
+ 
+});
+</script>
 </div>          
 	</body>
 </html>
