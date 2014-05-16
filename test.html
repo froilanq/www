@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <head>
+    <meta name="keywords" content="">
+    <title>CV - TV</title>
+    <!-- 1. jquery library -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+ 
+<!-- 2. flowplayer -->
+<script src="//releases.flowplayer.org/5.4.3/flowplayer.min.js"></script>
+ 
+<!-- 3. skin -->
+<link rel="stylesheet" href="//releases.flowplayer.org/5.4.3/skin/minimalist.css">
+<style>
+    .flowplayer {
+   width: 600px;
+   height: 338px;
+}
+</style>
+    </head>
+
+    <body style='height: 97%;'>
+		<div class="player" data-engine="flash">
+   <video preload="none">
+      <source type="application/x-mpegurl" src="http://hd2.worldkast.com:1935/8020/80201/playlist.m3u8" autoplay>
+   </video>
+   
+
+</div>  
+   <script>
+// run script after document is ready
+jQuery(function () {
+ 
+   // install flowplayer to an element with CSS class "player"
+   jQuery(".player").flowplayer({ 
+       swf: "//releases.flowplayer.org/5.4.3/flowplayer.swf",
+        engine: 'flash'
+   });
+ 
+});
+</script>
+	</body>
+</html>
