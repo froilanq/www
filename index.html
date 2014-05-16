@@ -7,9 +7,24 @@
     </head>
 
     <body style='height: 97%;'>
-		<div id="control"></div>
-		<script type="text/javascript">
-		location.href = "http://control.worldkast.com/players/worldkast/movilcvlr.html";
-			</script>           
+				        <center>
+				<!--PLAYER-->
+                	
+<script type="text/javascript" src="./swfobject.js"></script>
+<script type="text/javascript" src="./jwplayer.js"></script>
+<script type="text/javascript">jwplayer.key="oLU5AxWlkdPVXYCx5LxKXB2CybhiilHrrEGeoKANYzM=";</script><div style="width: 470px; height: 270px;" id="MediaPlayerOverview"></div>
+
+<script type="text/javascript">
+jwplayer('MediaPlayerOverview').setup({
+'file': 'rtmp://4.30.20.150/8020/80202',
+'autostart': 'false',
+'width': '470',
+'height': '270',
+   primary: 'flash'
+});
+</script>
+                
+				<!--FIN PLAYER-->
+				</center>           
 	</body>
 </html>
