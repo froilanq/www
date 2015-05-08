@@ -21,8 +21,20 @@
 	<div id="MediaPlayerOverview"></div>
 	<h3>64K</h3>
 	<div  id="MediaPlayerOverview2"></div>
-	<h3>Auditiorios</h3>
+	<h3>TV</h3>
 	<div  id="MediaPlayerOverview3"></div>
+	<h3>Auditiorios</h3>
+	<div  id="MediaPlayerOverview4"></div>
+	
+	<h2>En Html5</h2>
+	<h3>En Vivo HD</h3>
+	<video src="http://67.215.182.6:554/8020/80202/playlist.m3u8" width="380" height="260" controls preload></video>
+	<h3>En Vivo SD</h3>
+	<video src="http://67.215.182.6:554/8020/80201/playlist.m3u8" width="380" height="260" controls preload></video>
+	<h3>TV</h3>
+	<video src="http://67.215.182.6:554/8050/80502/playlist.m3u8" width="380" height="260" controls preload></video>
+	<h3>Auditiorios</h3>
+	<video src="http://67.215.182.6:554/8018/80182/playlist.m3u8" width="380" height="260" controls preload></video>
 </div>
 
 <script type='text/javascript'>
@@ -42,6 +54,13 @@
         primary: 'flash'
     });
     jwplayer('MediaPlayerOverview3').setup({
+        file: 'rtmp://67.215.182.6/8050/80502',
+        image: '//www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
+        width: '100%',
+        aspectratio: '4:3',
+        primary: 'flash'
+    });
+    jwplayer('MediaPlayerOverview4').setup({
         file: 'rtmp://67.215.182.6/8018/80182',
         image: '//www.longtailvideo.com/content/images/jw-player/lWMJeVvV-876.jpg',
         width: '100%',
